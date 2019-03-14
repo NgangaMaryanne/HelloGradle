@@ -7,9 +7,7 @@ pipeline {
 	    }
             steps {
                 script {
-                    withSonarQubeEnv('MaryanSonar') {
-			sh './gradlew --info sonarqube'
-                    } 
+		    sh './gradlew --info sonarqube
                 }     
             }
         }
