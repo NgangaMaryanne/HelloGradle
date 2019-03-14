@@ -7,7 +7,7 @@ pipeline {
 	    }
             steps {
                 script {
-		    sh './gradlew --info sonarqube
+		    sh './gradlew --info sonarqube'
                 }     
             }
         }
